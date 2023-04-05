@@ -70,10 +70,15 @@ class VerificadorDePortas(QWidget):
 
     # Função para exibir os resultados da verificação no campo de texto
     def exibir_resultados(self, resultados):
-        texto_resultados = ""
+        texto_resultados = "<html><body>"
         for porta, status in resultados:
-            texto_resultados += f"Porta {porta}: {status}\n"
-        self.texto_resultados.setPlainText(texto_resultados)
+            if status == "aberta":
+                cor = "green"
+            else:
+                cor = "red"
+            texto_resultados += f'<p style="color:{cor};">Porta {porta}: {status}</p>'
+        texto_resultados += "</body></html>"
+        self.texto_resultados.setHtml(texto_resultados)
 
 if __name__ == '__main__':
     aplicacao = QApplication(sys.argv)
