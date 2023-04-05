@@ -21,5 +21,7 @@ pip install PyQt5
 ```
 ## Imagem da Aplicação
 ![image](https://user-images.githubusercontent.com/101942554/229948633-790f13ce-e63b-4c92-bfda-70c201f8b541.png)
+![image](https://user-images.githubusercontent.com/101942554/229963445-dda305f2-873e-4b50-b55f-ce5fddf6a799.png)
+
 
 
